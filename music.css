@@ -1,0 +1,13 @@
+.music_list {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;   /*by default shows items from left to right*/
+    list-style-type: none;
+}
+
+.music_list_item a {
+    display: block;
+    padding: 0px 0px;
+    text-decoration: none;
+}

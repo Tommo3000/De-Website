@@ -1,0 +1,42 @@
+.container {
+    display: flex; /* Makes children (navbar and content) align side by side */
+    height: 100vh; /* Optional: Makes the container full height */
+}
+
+.navbar {
+    width: 250px;    /*increase this if the navigation bar overlaps with the content*/
+    padding: 20px;
+    margin: 30px;
+    /*background-color: aliceblue;*/
+    list-style-type: none; /* Removes the bullet points */
+}
+
+.content {
+    flex: 1;
+    padding: 20px;
+    overflow: auto;
+    /*background-color: black*/
+}
+
+body{
+    text-decoration: none;   /* This removes the underline */
+}
+
+.navbar_item a {
+        font-family: Andale Mono;
+        font-size: 60px;
+        line-height: 1.5;
+        color: grey;
+        text-decoration: none;  /* This removes the underline */
+}
+
+.navbar_item {
+    margin-bottom: 15px;
+    /* Adjust this value to increase or decrease spacing */
+}
+
+.navbar_item a:hover {
+    color: black;
+}
+
+
