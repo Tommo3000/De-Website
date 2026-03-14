@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Music - Brandend Huis</title>
+    <meta charset="UTF-8" />
+    <script>
+        document.write(`
+            <link rel="stylesheet" href="../index.css">
+            <link rel="stylesheet" href="item.css">
+        `);
+    </script>
+</head>
+
+<body>
+    <script>
+        fetch('../index.html')
+            .then(response => response.text())
+            .then(html => {
+                document.body.innerHTML = html;
+
+                // Fix navigation links to be root-relative
+                const navLinks = document.querySelectorAll('.navbar_item a');
+                navLinks.forEach(link => {
+                    const href = link.getAttribute('href');
+                    if (!href.startsWith('http')) {
+                        link.setAttribute('href', '../' + href);
+                    }
+                });
+
+                return fetch('item_content.html');
+            })
+            .then(response => response.text())
+            .then(component => {
+                document.getElementById('content').innerHTML = component;
+            });
+    </script>
+</body>
+
+</html>
