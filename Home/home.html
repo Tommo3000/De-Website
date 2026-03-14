@@ -5,7 +5,7 @@
     <meta charset="UTF-8"/>
     <script>
         document.write(`
-            <link rel="stylesheet" href="/index.css">
+            <link rel="stylesheet" href="../index.css">
         `);
     </script>
 </head>
@@ -15,6 +15,16 @@
             .then(response => response.text())
             .then(html => {
                 document.body.innerHTML = html;
+                
+                // Fix navigation links to be root-relative
+                const navLinks = document.querySelectorAll('.navbar_item a');
+                navLinks.forEach(link => {
+                    const href = link.getAttribute('href');
+                    if (!href.startsWith('http')) {
+                        link.setAttribute('href', '../' + href);
+                    }
+                });
+
                 return fetch('home_content.html');
             })
             .then(response => response.text())
