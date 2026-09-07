@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <atom:link href="[RSS URL]" rel="self" type="application/rss+xml" />
+    <title>[Brandend Huis]</title>
+    <link>[WEBSITE URL]</link>
+    <description>[WEBSITE DESCRIPTION]</description>
+    <ttl>[How often to check for a new update, measured in minutes. (60 is recommended)]</ttl>
+
+    <item>
+      <title>[260906_Launch]</title>
+      <pubDate>[UPDATE PUBLISHING DATE]</pubDate>
+      <link>[UPDATE URL]</link>
+      <guid>[UPDATE UNIQUE URL]</guid>
+      <description>[UPDATE DESCRIPTION]</description>
+    </item>
+  </channel>
+</rss>

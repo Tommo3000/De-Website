@@ -1,22 +1,25 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     <link rel="alternate" type="application/rss+xml" title="Your Site Name" href="/feed.xml">
-    <title>Start! - Brandend Huis</title>
-    <meta charset="UTF-8"/>
+    <title>Music - Brandend Huis</title>
+    <meta charset="UTF-8" />
     <script>
         document.write(`
             <link rel="stylesheet" href="../index.css">
+            <link rel="stylesheet" href="krabbels.css">
         `);
     </script>
 </head>
+
 <body>
     <script>
         fetch('../index.html')
             .then(response => response.text())
             .then(html => {
                 document.body.innerHTML = html;
-                
+
                 // Fix navigation links to be root-relative
                 const navLinks = document.querySelectorAll('.navbar_item a');
                 navLinks.forEach(link => {
@@ -26,7 +29,7 @@
                     }
                 });
 
-                return fetch('home_content.html');
+                return fetch('krabbels_content.html');
             })
             .then(response => response.text())
             .then(component => {
@@ -34,4 +37,5 @@
             });
     </script>
 </body>
+
 </html>

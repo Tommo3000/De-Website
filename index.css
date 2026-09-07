@@ -4,7 +4,7 @@
 }
 
 .navbar {
-    width: 250px;    /*increase this if the navigation bar overlaps with the content*/
+    width: 200px;    /*increase this if the navigation bar overlaps with the content*/
     padding: 20px;
     margin: 30px;
     /*background-color: aliceblue;*/
@@ -20,13 +20,14 @@
 
 body{
     text-decoration: none;   /* This removes the underline */
+    background-color: hsl(217, 0%, 80%) /* Paperlike background color */
 }
 
 .navbar_item a {
         font-family: Andale Mono;
-        font-size: 60px;
+        font-size: 40px;
         line-height: 1.5;
-        color: grey;
+        color: rgb(116, 115, 115);
         text-decoration: none;  /* This removes the underline */
 }
 
@@ -39,4 +40,6 @@ body{
     color: black;
 }
 
-
+a {
+    color: rgb(223, 146, 2);
+}
