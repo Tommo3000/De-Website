@@ -3,16 +3,16 @@
   <channel>
     <atom:link href="[RSS URL]" rel="self" type="application/rss+xml" />
     <title>[Brandend Huis]</title>
-    <link>[WEBSITE URL]</link>
-    <description>[WEBSITE DESCRIPTION]</description>
-    <ttl>[How often to check for a new update, measured in minutes. (60 is recommended)]</ttl>
+    <link>[https://brandendhuis.nl/Home/home.html]</link>
+    <description>[Project by Tom Hommes]</description>
+    <ttl>[60]</ttl>
 
     <item>
-      <title>[260906_Launch]</title>
-      <pubDate>[UPDATE PUBLISHING DATE]</pubDate>
-      <link>[UPDATE URL]</link>
-      <guid>[UPDATE UNIQUE URL]</guid>
-      <description>[UPDATE DESCRIPTION]</description>
+      <title>[Brandend Huis Launch]</title>
+      <pubDate>[7 September, 2026]</pubDate>
+      <link>[https://brandendhuis.nl/Home/home.html]</link>
+      <guid>[260907]</guid>
+      <description>[Website online, this message functions as a test for the RSS feed.]</description>
     </item>
   </channel>
 </rss>
