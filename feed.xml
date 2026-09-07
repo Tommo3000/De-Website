@@ -1,18 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <atom:link href="[RSS URL]" rel="self" type="application/rss+xml" />
-    <title>[Brandend Huis]</title>
-    <link>[https://brandendhuis.nl/Home/home.html]</link>
-    <description>[Project by Tom Hommes]</description>
-    <ttl>[60]</ttl>
+    <atom:link href="https://brandendhuis.nl/feed.xml" rel="self" type="application/rss+xml" />
+    <title>Brandend Huis</title>
+    <link>https://brandendhuis.nl/Home/home.html</link>
+    <description>Project by Tom Hommes</description>
+    <ttl>60</ttl>
 
     <item>
-      <title>[Brandend Huis Launch]</title>
-      <pubDate>[7 September, 2026]</pubDate>
-      <link>[https://brandendhuis.nl/Home/home.html]</link>
-      <guid>[260907]</guid>
-      <description>[Website online, this message functions as a test for the RSS feed.]</description>
+      <title>Brandend Huis Launch</title>
+      <pubDate>Mon, 07 Sep 2026 00:00:00 GMT</pubDate>
+      <link>https://brandendhuis.nl/Home/home.html</link>
+      <guid isPermaLink="false">260907</guid>
+      <description>Website online, this message functions as a test for the RSS feed.</description>
     </item>
   </channel>
 </rss>
